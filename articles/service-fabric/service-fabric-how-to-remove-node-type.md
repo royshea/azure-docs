@@ -52,7 +52,7 @@ When removing a node type that is Bronze, all the nodes in the node type go down
 To remove the node type, run the [Remove-AzServiceFabricNodeType](/powershell/module/az.servicefabric/remove-azservicefabricnodetype) cmdlet.  The cmdlet takes some time to complete.  Then run [Remove-ServiceFabricNodeState](/powershell/module/servicefabric/remove-servicefabricnodestate?view=azureservicefabricps) on each of the nodes that you want removed.
 
 ```powershell
-$groupname = "mynodetype"
+$groupname = "myresourcegroup"
 $nodetype = "nt2vm"
 $clustername = "mytestcluster"
 
